@@ -13,7 +13,7 @@ export const UsersPage: FC = () => {
   const items:User[] = useSelector(selUsersItems);
 
   useEffect(() => {
-    console.log('UsersPage.render');
+    
     dispatch({
       type: ACT_REQUEST_PENDING,
       payload: {
