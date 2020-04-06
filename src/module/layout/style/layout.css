@@ -1,0 +1,118 @@
+/* ------------- 컨텐츠 시작 ------------- */
+#container{margin-top:-1px; border-top:1px solid #cccccc;}
+#contents{min-height:400px; padding:0 0 80px 0;}
+#contents:after{display:block; clear:both; content:"";}
+
+/* ------------- 서브 컨텐츠 시작 ------------- */
+.sub_content{padding:0 0 0 0;}
+.sub_content:after{display:block; clear:both; content:"";}
+/* ------------- 서브 사이드 영역 ------------- */
+.sub_content .side_cont{float:left; width:200px;}
+/* 서브 사이드 메뉴 */
+.side_cont .sub_menu_box{min-height:250px; padding:0 0 50px 0;}
+.side_cont .sub_menu_box h2{padding:0 0 14px 10px; border-bottom:1px solid #ececec;}
+.side_cont .sub_menu_box .sub_menu{margin:7px 0 0 0;}
+.side_cont .sub_menu_box .sub_menu li{padding:1px 0 0 0;}
+.side_cont .sub_menu_box .sub_menu a{display:block; padding:7px 0 6px 10px; font-size:14px;}
+.side_cont .sub_menu_box .sub_menu a:hover,
+.side_cont .sub_menu_box .sub_menu .active{font-weight:bold; background:#f8f8f8; color:#ab3e55;}
+.side_cont .sub_menu_box .sub_menu .sub_depth1{margin:0 0 15px 0;}
+.side_cont .sub_menu_box .sub_menu .sub_depth1 li{}
+.side_cont .sub_menu_box .sub_menu .sub_depth1 a{padding:0 0 0 10px; font-size:12px;}
+/*.sub_menu_box{display:block; padding:10px 0 45px 0; vertical-align:top;}*/
+/* 서브 뎁스메뉴 보더 */
+.sub_menu_box.layer_type ul > li > ul {padding:10px 0 10px 0; border:1px solid #cacaca;}
+/* 서브메뉴 최상위(0뎁스) */
+.sub_menu_box .sub_depth0{padding:0; font-size:0; vertical-align:top; border:none;}
+.sub_menu_box .sub_depth0 > li{position:relative; display:block; vertical-align:top;}
+.sub_menu_box .sub_depth0 > li > a{display:block; padding:0 10px 10px 20px; font-size:14px; font-weight:bold; text-align:left;}
+.sub_menu_box .sub_depth0 > li > a.active{
+	background-color:#f8f8f8;}
+/* 서브메뉴 1뎁스 */
+.sub_menu_box .sub_depth1 > li{}
+.sub_menu_box .sub_depth1 > li > a{display:block; padding:5px 10px 7px 19px; font-size:12px;}
+.sub_menu_box .sub_depth1 > li > a:hover{background:#ab3e55;}
+.sub_menu_box .sub_depth1 > li > a.active{background:#ab3e55;}
+/* 서브메뉴 2,3,4 뎁스 CSS */
+.sub_menu_box .sub_depth1 li{position:relative;}
+.sub_menu_box .sub_depth1 li a{display:block; padding:5px 10px 7px 19px; font-size:12px;}
+.sub_menu_box .sub_depth1 li a:hover{background:#ab3e55;}
+.sub_menu_box .sub_depth1 li a.active{background:#ab3e55;}
+/* 서브 레이어 타입 */
+.sub_menu_box.layer_type a:hover,
+.sub_menu_box.layer_type a.active{color:#ffffff;}
+.sub_menu_box.layer_type .sub_menu0 > li > a{padding:10px 10px 10px 20px;}
+.sub_menu_box.layer_type .sub_menu0 > li > a:hover,
+.sub_menu_box.layer_type .sub_menu0 > li > a.active{color:#333333;}
+.sub_menu_box.layer_type .sub_menu0 > li > a img{max-width:100%;}
+.sub_menu_box.layer_type .sub_depth1{display:none; position:absolute; top:0px; left:200px; min-width:160px; background:#ffffff; z-index:100;}
+.sub_menu_box.layer_type .sub_depth2{display:none; position:absolute; top:-11px; left:160px; min-width:160px; background:#ffffff;}
+.sub_menu_box.layer_type .sub_depth3{display:none; position:absolute; top:-11px; left:160px; min-width:160px; background:#ffffff;}
+.sub_menu_box.layer_type .sub_depth4{display:none; position:absolute; top:-11px; left:160px; min-width:160px; background:#ffffff;}
+/* 서브 트리형 타입 */
+.sub_menu_box.tree_type ul{border:none 0;}
+.sub_menu_box.tree_type ul li a:hover{background:none 0; color:#333333; font-weight:bold;}
+.sub_menu_box.tree_type .sub_depth1{display:block; position:static; padding:0 0 0 15px;}
+.sub_menu_box.tree_type .sub_depth2{display:block; position:static; padding:0 0 0 10px;}
+.sub_menu_box.tree_type .sub_depth3{display:block; position:static; padding:0 0 0 10px;}
+.sub_menu_box.tree_type .sub_depth4{display:block; position:static; padding:0 0 0 10px;}
+.side_cont .sub_menu_box.tree_type .sub_menu a{display:block; padding:0; font-size:14px;}
+.side_cont .sub_menu_box.tree_type .sub_menu a:hover,
+.side_cont .sub_menu_box.tree_type .sub_menu .active{font-weight:normal; background:none 0;}
+/* 그룹(구분) 카테고리 */
+.group_tit{display:block; padding:0; margin:0 20px; font-size:14px;}
+/* 서브사이드  마이페이지 */
+.side_cont .sub_menu_box .sub_menu_mypage{margin:7px 0 0 0;}
+/* .side_cont .sub_menu_box .sub_menu_mypage > li{padding:8px 0 15px 0; font-size:14px; font-weight:bold; background:url('../../img/common/lnb_tit.png') no-repeat top left;} */
+.side_cont .sub_menu_box .sub_menu_mypage > li:first-child{margin:30px 0 0 0;}
+.side_cont .sub_menu_box .sub_menu_mypage a{display:block; padding:7px 0 6px 0; font-size:14px;}
+.side_cont .sub_menu_box .sub_menu_mypage a:hover,
+.side_cont .sub_menu_box .sub_menu_mypage .active{font-weight:bold; background:#f8f8f8; color:#ab3e55;}
+.side_cont .sub_menu_box .sub_menu_mypage .sub_depth1{margin:5px 0 25px 0;}
+.side_cont .sub_menu_box .sub_menu_mypage .sub_depth1 li{padding:1px 0 0 0; font-weight:normal;}
+.side_cont .sub_menu_box .sub_menu_mypage .sub_depth1 a{font-size:12px; text-indent:10px;}
+/* 서브 사이드 정보 */
+.side_cont .info_box{padding:0 0 0 10px;}
+.side_cont .info_box dl{margin:30px 0 0 0;}
+.side_cont .info_box dl:first-child{margin:0 0 0 0;}
+/* .side_cont .info_box dt{padding:8px 0 10px 0; font-size:14px; font-weight:bold; background:url('../../img/common/lnb_tit.png') no-repeat top left;} */
+.side_cont .info_box dd{}
+.side_cont .info_box .info_num{font-size:14px; color:#ab3e55;}
+.side_cont .info_box .info_mail_link{display:block; padding:0 0 3px 0;}
+.side_cont .info_box .info_mail_link:hover{text-decoration:underline;}
+/* 서브 사이드 검색 페이지 */
+.sub_search_box dl{margin:40px 0 0 0;}
+.sub_search_box dl:first-child{margin:0;}
+/* .sub_search_box dl dt{padding: 5px 0 10px 0; font-size: 14px; font-weight: bold; background: url(../../img/common/lnb_tit.png) no-repeat top left} */
+.sub_search_box dl dd .select_box{display:inline-block; padding-right:5px; margin:0 0 5px 0;}
+.sub_search_box dl dd select{width:198px;}
+.sub_search_box .chosen-container{width:198px;}
+.sub_search_box .benefit_box{margin:12px 0 0 0;}
+.sub_search_box .benefit_box span{display:inline-block; width:48%; padding:0 0 9px 0;}
+.sub_search_box .benefit_box span input{display:none;}
+/* .sub_search_box .benefit_box span label{display:inline-block; font-size:12px; padding-left:22px; cursor:pointer; background:url('../../img/icon/goods_icon/icon_check_off.png') no-repeat left center;} */
+/* .sub_search_box .benefit_box span label:hover{background:url('../../img/icon/goods_icon/icon_check_hover.png') no-repeat left center;} */
+/* .sub_search_box .benefit_box span label.on{background:url('../../img/icon/goods_icon/icon_check_active.png') no-repeat left center;} */
+.sub_search_box .color_box{padding:0 0 10px 0;}
+.sub_search_box .color_box span{display:inline-block; padding-right:2px;}
+.sub_search_box .color_box span input{display:none;}
+.sub_search_box .color_box span label{display:inline-block; width:20px; height:20px; font-size:0; padding:0; cursor:pointer;}
+/* .sub_search_box .color_box span .active{background-image:url('../../img/icon/goods_icon/icon_color_chk_on.png') !important;} */
+.sub_search_box .price_box{margin:12px 0 0 0; display:inline-block;}
+.sub_search_box .price_box input{height:24px; width: 175px; margin: 0 0 10px 0; border:1px solid #ccc; line-height:24px;}
+.sub_search_box .price_box span{display:inline-block; padding:0 5px; font-size:12px; vertical-align:top; line-height:22px;}
+.sub_search_box .quick_btn{padding:40px 0; text-align:center;}
+.sub_search_box .quick_btn input{display:inline-block; padding:10px 87px; border:1px solid #979797; background:#979797; color:#fff; cursor:pointer;}
+.sub_search_box .quick_btn input:hover{background:#626262; border:1px solid #626262;}
+label.check-s.color-white{border: #dfdfdf 1px solid;}
+/* .sub_search_box .color_box span label.check-s.color-white.active{background-image:url('../../img/icon/goods_icon/icon_color_chk_on_white.png') !important} */
+/* 서브메뉴 컨텐츠 내용 시작 */
+.sub_content .content{width:100%; min-height:500px; padding:0;}
+/* 서브 메뉴가 왼쪽일때 */
+#contents .sub_content > .side_cont + .content{float:left; width:960px; padding:0 0 0 40px;}
+/* 서브 메뉴가 오른쪽일때 */
+#contents .sub_content > .content + .side_cont{padding:0 0 0 40px;}
+#contents .sub_content > .content + .side_cont .sub_menu_box.layer_type .sub_depth1{right:200px;}
+#contents .sub_content > .content + .side_cont .sub_menu_box.layer_type .sub_depth2{right:160px;}
+#contents .sub_content > .content + .side_cont .sub_menu_box.layer_type .sub_depth3{right:160px;}
+#contents .sub_content > .content + .side_cont .sub_menu_box.layer_type .sub_depth4{right:160px;}
