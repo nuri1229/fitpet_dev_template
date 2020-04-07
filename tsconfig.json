@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    
     "sourceMap": true,
     "noImplicitAny": false,
     "module": "commonjs",
@@ -14,6 +15,8 @@
     "jsx": "react",
     "baseUrl": "./",
     "strict": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "esModuleInterop": true
   },
   "exclude": [

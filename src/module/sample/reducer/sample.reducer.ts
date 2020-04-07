@@ -1,6 +1,6 @@
 import { createReducer } from 'typesafe-actions';
 import { Result } from '../model';
-import { SampleActions, actions } from '../action';
+import { SampleActions, actions, SampleActions2, actions2 } from '../action';
 
 type SampleState = {
   items: Result[]
@@ -18,3 +18,12 @@ export const sampleReducer = createReducer<SampleState, SampleActions>(
     }
   })
   .handleAction(actions.actSampleError, (state) => (state));
+
+  export const sampleReducer2 = createReducer<SampleState, SampleActions2>(
+    initState())
+    .handleAction(actions2.request, (state) => {
+      return state;
+    })
+    .handleAction(actions2.success, (state, action) => {
+      return state;
+    });
