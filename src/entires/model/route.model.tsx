@@ -1,3 +1,5 @@
+import { AxiosResponse } from "axios";
+
 export interface RouteModel {
 
   name: string;
@@ -9,3 +11,14 @@ export interface RouteModel {
   guard?: () => Promise<boolean>;
   
 }
+
+export interface RequestPendingPayload {
+  callService: () => Promise<AxiosResponse<any>>,
+  successAction: string,
+  errorAction: string
+}
+
+export type Test = {
+  payload: RequestPendingPayload
+}
+

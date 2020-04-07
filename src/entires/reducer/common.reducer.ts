@@ -11,7 +11,7 @@ const initState = ():CommonState => ({isPending: false})
 export const commonReducer = createReducer<CommonState, CommonActions>(
   initState())
   .handleAction(actions.actRequestPending, () => {
-    console.log('actRequestPending');
+    console.log('1')
     return {isPending: true}
   })
   .handleAction(actions.actRequestSuccess, () => ({isPending: false}))

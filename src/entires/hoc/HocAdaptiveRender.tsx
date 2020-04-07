@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import { getDeviceType } from '../components/DeviceDetectContextProvider';
+import { DeviceContext } from '../components/DeviceDetectContextProvider';
 
 export interface HocAdaptiveRenderProps<T> {
   desktop: FC<T>;
@@ -8,14 +9,15 @@ export interface HocAdaptiveRenderProps<T> {
 }
 
 export function HocAdaptiveRender<T>(component: HocAdaptiveRenderProps<T>) {
-  
+
   const componentGenerate: FC<T> = props => {
+
+    const context = useContext(DeviceContext);
+    const deviceType = context.device;
 
     let Comp: FC<T>;
     Comp = component.desktop;
 
-    const deviceType =  getDeviceType();
-    console.log('deviceType..', deviceType);
     if (deviceType === 'DESKTOP' && component.desktop) {
       Comp = component.desktop;
     } else if (deviceType === 'MOBILE' && component.mobile) {  
@@ -29,3 +31,4 @@ export function HocAdaptiveRender<T>(component: HocAdaptiveRenderProps<T>) {
 
   return componentGenerate;
 }
+
